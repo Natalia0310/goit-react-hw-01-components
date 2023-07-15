@@ -1,0 +1,49 @@
+@import 'index.css';
+
+.statistics {
+    margin: 50px 0px;
+    padding: 10px;
+
+    border-radius: 2px;
+
+    text-align: center;
+    background-image: linear-gradient(45deg, var(--dark-clr-1), var(--dark-clr-2));
+}
+
+.title {
+    margin-bottom: 20px;
+
+    color: var(--light-clr-2);
+}
+
+.statList {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+    border-radius: 2px;
+
+    color: var(--light-clr-2);
+    background-color: var(--dark-clr-2);
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 10px 20px;
+    margin: 2px 0px 2px 2px;
+
+    border-radius: 2px;
+}
+
+.statList :last-child {
+    margin-right: 2px;
+}
+
+.label {
+    font-size: 28px;
+    color: var(--light-clr-3);
+}

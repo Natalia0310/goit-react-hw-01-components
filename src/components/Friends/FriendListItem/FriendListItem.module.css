@@ -1,0 +1,43 @@
+@import 'index.css';
+
+:root {
+    --friend-online: #21b339;
+    --friend-offline: #d44937;
+}
+
+.itemFriend {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 10px;
+    width: 300px;
+
+    border-radius: 2px;
+    border: 2px dashed var(--accent-clr-1);
+
+    color: var(--dark-clr-2);
+    background-color: var(--light-clr-2);
+}
+
+.statusFriendOnline {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    box-shadow: 0px 0px 4px 1px rgb(0, 0, 0);
+
+    background-color: var(--friend-online);
+}
+
+.statusFriendOffline {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    box-shadow: 0px 0px 4px 1px rgb(0, 0, 0);
+
+    background-color: var(--friend-offline);
+}

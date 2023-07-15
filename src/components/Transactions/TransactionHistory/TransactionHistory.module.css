@@ -1,0 +1,54 @@
+@import 'index.css';
+
+.table-container {
+    width: 1000px;
+
+    margin: 50px 0px;
+}
+
+.transactionHistory {
+    margin: 50px 0px;
+
+    width: 1000px;
+
+    text-align: center;
+    border-collapse: collapse;
+    box-shadow: 0px 0px 20px 1px var(--dark-clr-3);
+}
+
+.transactionHistory th {
+    padding: 10px;
+
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    color: var(--light-clr-1);
+    background-color: var(--dark-clr-2);
+}
+
+.transactionHistory tr {
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+
+    color: var(--dark-clr-3);
+    background-color: var(--dark-clr-1);
+}
+
+.transactionHistory tr:nth-child(odd) {
+    color: var(--dark-clr-3);
+    background-color: var(--light-clr-1);
+}
+
+.transactionHistory td {
+    padding: 10px;
+
+    border-bottom: 1px solid var(--light-clr-1);
+}
+
+.currency {
+    color: var(--accent-clr-1);
+}

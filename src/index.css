@@ -1,4 +1,32 @@
-@import-normalize; /* bring in normalize.css styles */
+:root {
+  --light-clr-1: #f1f1f1;
+  --light-clr-2: #cfc5fc;
+  --light-clr-3: #b3a9a3;
+
+  --dark-clr-1: #315dd62d;
+  --dark-clr-2: #12043e;
+  --dark-clr-3: #202020;
+
+  --accent-clr-1: #263ea8;
+  --body-bck-clr: rgba(11, 12, 88, 0.322);
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+img {
+  display: block;
+}
 
 body {
   margin: 0;
@@ -7,9 +35,21 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-color: var(--body-bck-clr);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 50px;
+
+  font-size: 40px;
 }
